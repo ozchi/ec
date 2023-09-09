@@ -1,0 +1,14 @@
+In a genetic algorithm for solving the Traveling Salesman Problem (TSP), three classes play crucial roles: TSP Class, Individual Class, and Population Class.
+
+The TSP Class encapsulates the problem instance. It reads city coordinates and calculates distances, offering methods to get the distance between any two cities. Essentially, it sets the stage for the algorithm.
+
+The Individual Class represents a single possible solution. It has attributes for city permutation and fitness—calculated based on the total distance of the route. Methods are available for mutating these individuals, a crucial operation to explore the solution space. Attributes like permutation and fitness are contained in this class because they define each unique solution to the TSP.
+
+The Population Class holds a collection of individuals, acting as the ecosystem in which they evolve. It defines the population size and contains a list of individual objects. Methods for operations like selection, crossover, and mutation are also provided.
+
+In summary, the Population Class combine the genetic algorithm's dynamics, the Individual Class provides potential solutions, and both interact on the stage set by the TSP Class.
+
+
+
+
+
